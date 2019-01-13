@@ -1,0 +1,32 @@
+{
+  "name": "tabitha",
+  "version": "0.1.0",
+  "description": "Replace tabs with spaces, but smart enough to produce proper table layouts",
+  "main": "built/index.js",
+  "types": "built/index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielearwicker/tabitha.git"
+  },
+  "keywords": [
+    "tabs",
+    "spaces"
+  ],
+  "author": "Daniel Earwicker <dam@earwicker.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danielearwicker/tabitha/issues"
+  },
+  "homepage": "https://github.com/danielearwicker/tabitha#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^23.3.12",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.5",
+    "typescript": "^3.2.2"
+  }
+}

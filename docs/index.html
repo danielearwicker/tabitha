@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Tabitha</title>
+        <script>
+            window.exports = {};
+        </script>
+        <script type="text/javascript" src="built/index.js"></script>
+        <style>
+            body { 
+                padding: 1em;
+            }
+            textarea {
+                width: 100%;
+                height: 14em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Tabitha</h1>
+        <p>Converts tab-delimited data into neatly formatted plaintext tables.</p>
+        <h3>Paste input here:</h3>
+        <textarea id="input"></textarea>
+        <h3>Output will appear here:</h3>
+        <textarea id="output"></textarea>
+        <script>
+            var input = document.querySelector("#input"),
+                output = document.querySelector("#output");
+            
+            input.addEventListener("input", () => {
+                output.value = tabulate(input.value);
+            });
+        </script>
+    </body>
+</html>
