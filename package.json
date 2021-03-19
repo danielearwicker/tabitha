@@ -22,7 +22,6 @@
     "url": "https://github.com/danielearwicker/tabitha/issues"
   },
   "homepage": "https://github.com/danielearwicker/tabitha#readme",
-  "dependencies": {},
   "devDependencies": {
     "@types/jest": "^23.3.12",
     "jest": "^23.6.0",

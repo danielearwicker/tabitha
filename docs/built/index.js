@@ -21,7 +21,7 @@ function tabulate(tabbedTable) {
     if (!rows || rows.length === 0) {
         return header;
     }
-    var divider = cellLengths.map(function (c) { return "-".repeat(c); }).join("-+-");
+    var divider = cellLengths.map(function (c) { return "-".repeat(c); }).join("-|-");
     return [header, divider].concat(rows).join("\n");
 }
 exports.tabulate = tabulate;

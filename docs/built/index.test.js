@@ -15,7 +15,7 @@ test("multiple lines get a divider", function () {
     expect(index_1.tabulate("First name\tLast name\tBorn\tNationality\n" +
         "Obidiah\tMcTeabag\t1980\tScottish"))
         .toBe("First name | Last name | Born | Nationality\n" +
-        "-----------+-----------+------+------------\n" +
+        "-----------|-----------|------|------------\n" +
         "Obidiah    | McTeabag  | 1980 | Scottish   ");
 });
 test("columns are padded to constant width", function () {
@@ -23,7 +23,7 @@ test("columns are padded to constant width", function () {
         "O\tMcTeabag\t1980\tScottish\n" +
         "Melvin\tBogdanovich\t-\tEastern Basingstoke"))
         .toBe("First name | Last name   | Born | Nationality        \n" +
-        "-----------+-------------+------+--------------------\n" +
+        "-----------|-------------|------|--------------------\n" +
         "O          | McTeabag    | 1980 | Scottish           \n" +
         "Melvin     | Bogdanovich | -    | Eastern Basingstoke");
 });

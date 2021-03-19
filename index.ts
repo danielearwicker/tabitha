@@ -29,7 +29,7 @@ export function tabulate(tabbedTable: string) {
         return header;
     }
 
-    const divider = cellLengths.map(c => "-".repeat(c)).join("-+-");
+    const divider = cellLengths.map(c => "-".repeat(c)).join("-|-");
 
     return [header, divider, ...rows].join("\n");
 }
